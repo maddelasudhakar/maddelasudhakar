@@ -1,44 +1,74 @@
+@font-face {
+  font-family: 'Melodrama-Variable';
+  src: url('../fonts/Melodrama-Variable.woff2') format('woff2'),
+       url('../fonts/Melodrama-Variable.woff') format('woff'),
+       url('../fonts/Melodrama-Variable.ttf') format('truetype');
+       font-weight: 300 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Melodrama-Light';
+  src: url('../fonts/Melodrama-Light.woff2') format('woff2'),
+       url('../fonts/Melodrama-Light.woff') format('woff'),
+       url('../fonts/Melodrama-Light.ttf') format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Melodrama-Regular';
+  src: url('../fonts/Melodrama-Regular.woff2') format('woff2'),
+       url('../fonts/Melodrama-Regular.woff') format('woff'),
+       url('../fonts/Melodrama-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Melodrama-Medium';
+  src: url('../fonts/Melodrama-Medium.woff2') format('woff2'),
+       url('../fonts/Melodrama-Medium.woff') format('woff'),
+       url('../fonts/Melodrama-Medium.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Melodrama-Semibold';
+  src: url('../fonts/Melodrama-Semibold.woff2') format('woff2'),
+       url('../fonts/Melodrama-Semibold.woff') format('woff'),
+       url('../fonts/Melodrama-Semibold.ttf') format('truetype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Melodrama-Bold';
+  src: url('../fonts/Melodrama-Bold.woff2') format('woff2'),
+       url('../fonts/Melodrama-Bold.woff') format('woff'),
+       url('../fonts/Melodrama-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+
 .nav-logo img {
   width: 100%;
 }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-}
-.navbar .nav-header {
-  display: inline;
-}
-.navbar .nav-header .nav-logo {
-  display: inline-block;
-}
-.navbar .nav-links {
-  display: flex;
-  float: right;
-  grid-gap: 30px;
-}
-.navbar .nav-links a {
-  padding: 10px 0px;
-  text-decoration: none;
-  color: var(--color-tertiary);
-  font-weight: 500;
-}
-.navbar .nav-links a:hover {
-  color: var(--color-primary) !important;
-}
-.navbar #nav-check,
-.navbar .nav-btn {
-  display: none;
-}
-.header {
-  top: 0;
-  left: 0;
-  width: 100%;
+
+.container {
+  max-width: 1280px;
   height: auto;
-  z-index: 100;
-  margin: 0 auto;
-  position: sticky;
-  background-color: var(--white);
-  border-bottom: 1px solid #f5f5f5;
+  margin: 0 auto
 }

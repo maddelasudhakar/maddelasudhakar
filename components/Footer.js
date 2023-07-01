@@ -1,7 +1,9 @@
+import styles from "../styles/Home.module.css";
+
 export default function Footer() {
     return (
-        <div className="container">
-            <h2>Foter</h2>
+        <div className={styles.container}>
+            <h2>Footer</h2>
         </div>
     )
 }

@@ -4,21 +4,21 @@ import Image from "next/image";
 import Head from "next/head";
 export default function Navbar() {
   return (
-    <div className={`${styles.container_fluid} ${styles.for_bg}`}>
+    <div className={`${styles.container} ${styles.for_bg}`}>
       <Head>
         <title>Maddela Sudhakar - UI/UX Designer & Graphic Designer</title>
         <meta name="description" content="Maddela Sudhakar - UI/UX Designer & Graphic Designer" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <nav
-        className={`${styles.container} ${styles.forflex} ${styles.ltn_header_transparent}`}
+        className={`${styles.container} ${styles.forflex}`}
       >
         <div>
           <Link href="/">
-            <Image src="/images/logo1.png" alt="logo" width={100} height={92} />
+            <Image src="/images/color-logo.png" alt="logo" width={225} height={70} className={styles.logo} priority={true} />
           </Link>
-        </div>
-        <div className={styles.mainmenu}>
+         </div>
+        {/*<div className={styles.mainmenu}>
           <Link href="/">
             Home
           </Link>
@@ -34,7 +34,7 @@ export default function Navbar() {
           <Link href="/contact">
             Contact Me
           </Link>
-        </div>
+        </div> */}
       </nav>
     </div>
   );
