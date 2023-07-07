@@ -1,84 +1,137 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
-:root {
-  --primary: #c6ff00;
-  --white: #fff;
-  --black: #000;
-}
-::-webkit-scrollbar {
-  width: 8px
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: var(--primary)
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background-color: var(--white)
-}
-
-*,:after,:before {
+html,
+body,
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  list-style: none;
-  list-style-type: none;
-  text-decoration: none;
-  text-rendering: optimizeLegibility;
-  scrollbar-width: thin;
-  scrollbar-color: #c6ff00 #d1d9e6
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+@font-face {
+  font-family: 'Melodrama-Variable';
+  src: url('../fonts/Melodrama-Variable.woff2') format('woff2'),
+       url('../fonts/Melodrama-Variable.woff') format('woff'),
+       url('../fonts/Melodrama-Variable.ttf') format('truetype');
+       font-weight: 300 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Melodrama-Light';
+  src: url('../fonts/Melodrama-Light.woff2') format('woff2'),
+       url('../fonts/Melodrama-Light.woff') format('woff'),
+       url('../fonts/Melodrama-Light.ttf') format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Melodrama-Regular';
+  src: url('../fonts/Melodrama-Regular.woff2') format('woff2'),
+       url('../fonts/Melodrama-Regular.woff') format('woff'),
+       url('../fonts/Melodrama-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Melodrama-Medium';
+  src: url('../fonts/Melodrama-Medium.woff2') format('woff2'),
+       url('../fonts/Melodrama-Medium.woff') format('woff'),
+       url('../fonts/Melodrama-Medium.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Melodrama-Semibold';
+  src: url('../fonts/Melodrama-Semibold.woff2') format('woff2'),
+       url('../fonts/Melodrama-Semibold.woff') format('woff'),
+       url('../fonts/Melodrama-Semibold.ttf') format('truetype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Melodrama-Bold';
+  src: url('../fonts/Melodrama-Bold.woff2') format('woff2'),
+       url('../fonts/Melodrama-Bold.woff') format('woff'),
+       url('../fonts/Melodrama-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+:root {
+  --backgroundColor: #000000;
+  --primaryColor: #C6FF00;
 }
 
 body {
-  font-family: Poppins,sans-serif;
-  color: var(--primary);
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+  background-color: var(--backgroundColor);
+}
+
+.hero__header {
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__header h1 {
+  font-family: 'Melodrama-Bold';
+  font-size: 120px;
+  color: var(--primaryColor);
+}
+
+.hero__header h2 {
+  font-family: 'Melodrama-Bold';
+  font-size: 34px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.scroll-section-outer {
+  overflow: hidden;
+}
+
+.scroll-section-inner {
+  height: 100vh;
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
   position: relative;
-  background-color: var(--black)
 }
 
-h1 {
-  font-size: 180px;
-  line-height: 200px;
-  font-weight: 700;
+.scroll-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-section h3 {
   font-family: 'Melodrama-Bold';
+  font-size: 34px;
+  color: #ffffff;
   text-transform: uppercase;
-}
-
-h2 {
-  font-size: 130px;
-  line-height: 160px;
-  font-weight: 600;
-  font-family: 'Melodrama-Bold';
-  text-transform: uppercase;
-}
-
-h3 {
-  font-size: 30px;
-  line-height: 38px;
-  font-weight: 600
-}
-
-h4 {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 500;
-  color: var(--color-tertiary)
-}
-
-h5 {
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 400
 }
 
 p {
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--white);
-  font-weight: 400
+  color: #ffffff;
 }
-/* Menu */
